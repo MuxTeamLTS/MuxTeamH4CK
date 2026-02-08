@@ -19,6 +19,7 @@ while True:
 	print(Fore.RED + "[1] IP L4")
 	print(Fore.RED + "[2] Ping Checker MCPE")
 	print(Fore.RED + "[3] MCBOT 0.14.x")
+	print("Credit: MineGamerST")
 	print("")
 	
 	player = input(Fore.RED + "Select Options: ")
