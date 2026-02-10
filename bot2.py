@@ -9,7 +9,7 @@ import getpass
 import os
 
 # Pedir el token al iniciar el script (no hardcodeado)
-TOKEN = getpass.getpass("MTQ2NjI0MjkwNzY0NzM3NzQ5MQ.GUFXzx.u7_2MCq6g1GlaH64T9oPb7lMm4_95pue5FTooQ")
+TOKEN = getpass.getpass("Token")
 
 intents = discord.Intents.default()
 intents.message_content = True
