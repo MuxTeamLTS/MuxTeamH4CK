@@ -25,7 +25,7 @@ port = int(input("Port: "))
 print(f"Server Connect: {ip} {port}")
 time.sleep(3)
 os.system("clear")
-os.system("figlet MineStresserC2")
+os.system("figlet 𝕄𝕚𝕟𝕖𝕋𝕖𝕒𝕞ℍ𝟜ℂ𝕂")
 print(" ")
 print(f"Running Packets > {ip} : {port}")
 # Start Attack
