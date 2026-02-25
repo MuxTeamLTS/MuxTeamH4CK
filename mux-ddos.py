@@ -19,7 +19,7 @@ while True:
 	print(Fore.RED + "[1] IP L4")
 	print(Fore.RED + "[2] Ping Checker MCPE")
 	print("")
-	print("Credit: MineGamerST")
+	print("Owner: ItzMuxGamer")
 	print("")
 	
 	player = input(Fore.RED + "Select Options: ")
