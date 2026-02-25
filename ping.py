@@ -1,7 +1,7 @@
 from socket import *
 import argparse
 import time
-parser = argparse.ArgumentParser(description="MCPE Checker Ping Tool Credit: MineGamerST")
+parser = argparse.ArgumentParser(description="MCPE Checker Ping Tool Credit: ItzMuxGamer")
 parser.add_argument('dns', help='domain or ip of the server/service')
 parser.add_argument('-p', dest='port', help='port')
 parser.add_argument('--timeout', dest='tm', help='timeout')
@@ -11,7 +11,7 @@ green = '\033[0;32m'
 red = '\033[0;31m'
 violet = '\033[0;33m'
 off = '\033[0m'
-print(f'Copyright MineStresserC2 2026\n\nConnecting To {green}{args.dns}{off} ON {green}UDP {args.port}{off}:\n')
+print(f'Copyright MuxTeamH4CK Craftsman Ping Checker x Many Socket\n\nConnecting To {green}{args.dns}{off} ON {green}UDP {args.port}{off}:\n')
 enviadas = 0
 falhas = 0
 accepted = 0
