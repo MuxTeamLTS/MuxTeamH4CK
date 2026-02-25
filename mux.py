@@ -157,7 +157,7 @@ async def udppps(ctx, ip: str, port: int, tiempo: int):
         await ctx.send("Attack Is Running Stop With Cmd: !stop")
         return
     if time.time() - last_attack_time < cooldown_seconds:
-        await ctx.send(f"Debes esperar {int(cooldown_seconds - (time.time() - last_attack_time))} segundos antes de lanzar otro ataque")
+        await ctx.send(f"Please WAIT {int(cooldown_seconds - (time.time() - last_attack_time))} ")
         return
     attack_in_progress = True
     current_attack_stop_event = threading.Event()
@@ -217,7 +217,7 @@ async def udpflood(ctx, ip: str, port: int, tiempo: int):
         await ctx.send("Attack Is Running Stop With Cmd: !stop")
         return
     if time.time() - last_attack_time < cooldown_seconds:
-        await ctx.send(f"Remaining {int(cooldown_seconds - (time.time() - last_attack_time))} Something Others")
+        await ctx.send(f"Please WAIT {int(cooldown_seconds - (time.time() - last_attack_time))} ")
         return
     attack_in_progress = True
     current_attack_stop_event = threading.Event()
@@ -248,7 +248,7 @@ async def udp_down(ctx, ip: str, port: int, tiempo: int):
         await ctx.send("Attack are is Running Stop with cmd: !stop")
         return
     if time.time() - last_attack_time < cooldown_seconds:
-        await ctx.send(f"Please WAIT! {int(cooldown_seconds - (time.time() - last_attack_time))} Time")
+        await ctx.send(f"Please WAIT {int(cooldown_seconds - (time.time() - last_attack_time))} ")
         return
     attack_in_progress = True
     current_attack_stop_event = threading.Event()
