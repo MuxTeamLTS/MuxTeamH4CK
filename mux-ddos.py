@@ -16,14 +16,14 @@ list_numbers = ["1" , "2"]
 while True:
 	os.system("clear")
 	print("\033[31m")
-	print("====================================")
-	print("|       MuxTeamH4CK DDoS ATTACK    |")
-	print("|                                  |")
-	print(Fore.RED + "| [1] IP DDoS                      |")
-	print(Fore.RED + "| [2] Minecraft Ping               |")
-	print("|                                  |")
-	print("| Teams: EnderBob x ItzMuxGamer    |")
-	print("====================================")
+	print("=====================================")
+	print("|      MuxTeamH4CK DDoS ATTACK      |")
+	print("|                                   |")
+	print(Fore.RED + "| [1] IP DDoS                       |")
+	print(Fore.RED + "| [2] Minecraft Ping                |")
+	print("|                                   |")
+	print("| Teams: EnderBob x ItzMuxGamer     |")
+	print("=====================================")
 	
 	player = input(Fore.RED + "root@MuxTeamH4CK: ")
 	
