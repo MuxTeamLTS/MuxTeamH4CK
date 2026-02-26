@@ -11,25 +11,29 @@ except ModuleNotFoundError:
 import time
 os.system("clear")
 
-lista_numeros = ["1" , "2" , "3" , "4" , "5"]
+list_numbers = ["1" , "2"]
 
 while True:
 	os.system("clear")
-	os.system("pyfiglet --color=RED MuxTeamH4CK")
-	print(Fore.RED + "[1] IP L4")
-	print(Fore.RED + "[2] Ping Checker MCPE")
-	print("")
-	print("Owner: ItzMuxGamer")
-	print("")
+	print("\033[31m")
+	print("====================================")
+	print("|       MuxTeamH4CK DDoS ATTACK    |")
+	print("|                                  |")
+	print(Fore.RED + "| [1] IP DDoS                      |")
+	print(Fore.RED + "| [2] Minecraft Ping               |")
+	print("|                                  |")
+	print("| Teams: EnderBob x ItzMuxGamer    |")
+	print("====================================")
 	
-	player = input(Fore.RED + "Select Options: ")
+	player = input(Fore.RED + "root@MuxTeamH4CK: ")
 	
 	if player == '2':
 		os.system("clear")
-		os.system("pyfiglet --color=RED MuxTeamH4CK")
+		print("===========================")
+		print("|       MuxTeamH4CK       |")
 		player_4_ip = input(Fore.RED + "IP: ")
 		player_4_port = input(Fore.RED + "Port: ")
-		time.sleep(1)
+		time.sleep(2)
 		os.system("clear")
 		os.system("pyfiglet --color=RED MuxTeamH4CK")
 		os.system(f"python3 ping.py {player_4_ip} -p {player_4_port}")
