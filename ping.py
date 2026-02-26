@@ -54,11 +54,11 @@ try:
                     else:
                         lower_latency = latency0
         except TimeoutError:
-            print('\033[0;31mServer Socket : Ping has see Server Crashed!\033[0m')
+            print('\033[0;31mServer cant Connecting\033[0m')
             falhas += 1
             enviadas += 1
         except Exception as e:
-            print('\033[0;31mError Server IP Port\033[0m\n\n')
+            print('\033[0;31mServer has Socket!\033[0m\n\n')
 
         time.sleep(coldown)
 except KeyboardInterrupt:
